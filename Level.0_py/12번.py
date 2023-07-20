@@ -1,6 +1,4 @@
-#문자열 리스트 출력 <입력: ["a","b","c"]> <출력: "abc">
-def solution(arr):
-    answer = ''
-    for i in range(len(arr)):
-        answer += arr[i]
+# 문자열 곱하기 <입력: hi 3 > <출력: hihihi>
+def solution(my_string, k):
+    answer = my_string*k
     return answer

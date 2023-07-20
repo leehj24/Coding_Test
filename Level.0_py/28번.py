@@ -11,3 +11,4 @@ def solution(numLog):
         elif diff == -10:
             answer += 'a' # 10 빼기
     return answer
+#입력 [0, 1, 0, 10, 0, 1, 0, 10, 0, -1, -2, -1] #출력 wsdawsdassw

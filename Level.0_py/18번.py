@@ -1,9 +1,24 @@
-def solution(n):
+def solution(ineq, eq, n, m):
     answer = 0
-    if n %2 ==1 :
-        for i in range(1,n+1,2):
-            answer += i
-    else:
-        for i in range(2,n+1,2):
-            answer += i**2
+    if n > m and ineq ==">":
+        answer = 1
+    elif n < m and ineq == "<":
+        answer = 1
+    elif n == m and eq == "=":
+        answer = 1
+
+    return answer
+#또는 
+
+def solution(ineq, eq, n, m):
+    answer = 0
+    if (ineq == '>' and eq == '='):
+        answer = 1 if n >= m else 0
+    elif (ineq == '<' and eq == '='):
+        answer = 1 if n <= m else 0
+    elif (ineq == '>' and eq == '!'):
+        answer = 1 if n > m else 0
+    elif (ineq == '<' and eq == '!'):
+        answer = 1 if n < m else 0
+    
     return answer

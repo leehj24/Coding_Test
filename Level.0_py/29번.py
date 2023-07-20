@@ -1,14 +1,9 @@
-def solution(numLog):
-    answer = ''
-    for i in range(1, len(numLog)):
-        diff = numLog[i] - numLog[i-1] # 현재 값과 이전 값의 차이를 계산
-        if diff == 1:
-            answer += 'w' # 1 더하기
-        elif diff == -1:
-            answer += 's' # 1 빼기
-        elif diff == 10:
-            answer += 'd' # 10 더하기
-        elif diff == -10:
-            answer += 'a' # 10 빼기
+def solution(arr, queries):
+    answer = []
+    for a, b in queries:
+        arr[a], arr[b] = arr[b], arr[a]
+    answer = arr
     return answer
-#입력 [0, 1, 0, 10, 0, 1, 0, 10, 0, -1, -2, -1] #출력 wsdawsdassw
+
+# arr= [0,1,2,3,4] queries=[[0,3],[1,2],[1,4]]
+# arr의 0번째와 3번째 바꾸고, arr의 1번째와 2번째 바꾸고, arr의 1번째와 4번째 바꾸기

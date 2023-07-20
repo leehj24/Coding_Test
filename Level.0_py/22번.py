@@ -1,12 +1,12 @@
-#등차수열 합 include가 true일 때만 작용
-def solution(a, d, included):
+def solution(a, b, c):
     answer = 0
-    for i in range(len(included)):
-        if included[i]== 1:
-            answer += a+d*i
+    if a==b and b==c and c==a:
+        answer = (a+b+c)*(a**2+b**2+c**2)*(a**3+b**3+c**3)
+    elif a!=b and b!=c and c!=a:
+        answer = a+b+c
+    else:
+        answer = (a+b+c)*(a**2+b**2+c**2)
     return answer
-
-#두 정수 a, d와 길이가 n인 boolean 배열 included가 주어집니다. 
-# 첫째항이 a, 공차가 d인 등차수열에서 included[i]가 i + 1항을 의미할 때, 
-# 이 등차수열의 1항부터 n항까지 included가 true인 항들만 더한 값을 return 하는 
-# solution 함수를 작성해 주세요.
+#세 숫자가 모두 다르다면 a + b + c 점을 얻습니다.
+#세 숫자 중 어느 두 숫자는 같고 나머지 다른 숫자는 다르다면 (a + b + c) × (a2 + b2 + c2 )점을 얻습니다.
+#세 숫자가 모두 같다면 (a + b + c) × (a2 + b2 + c2 ) × (a3 + b3 + c3 )점을 얻습니다.

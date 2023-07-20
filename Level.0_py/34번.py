@@ -1,6 +1,11 @@
-def solution(start, end):
+def solution(n):
     answer = []
-    for i in range(start,end+1):
-        answer.append(i)
+    while n >1:
+        answer.append(int(n))
+        if n % 2 == 0:
+            n = n / 2
+        else:
+            n = 3 * n + 1  
+    answer.append(1)
     return answer
-#start = 3 ,end= 10 ,answer = [3,4,5,6,7,8,9,10]
+# n이 짝수면 %2 홀수이면 3 * n + 1 을 계속 계산하여 결국 1로 만듦

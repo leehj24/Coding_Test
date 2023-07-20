@@ -1,3 +1,4 @@
-def solution(number):
-    a= int(number)%9
-    return a
+def solution(my_string, queries):
+    for (s, e) in queries:
+        my_string = my_string[:s] + my_string[s:e+1][::-1] + my_string[e+1:]
+    return my_string

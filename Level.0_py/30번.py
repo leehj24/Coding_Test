@@ -1,9 +1,11 @@
 def solution(arr, queries):
     answer = []
-    for a, b in queries:
-        arr[a], arr[b] = arr[b], arr[a]
-    answer = arr
+    for s, e, k in queries:
+        tmp = []
+        for x in arr[s:e+1]:
+            if x > k:
+                tmp.append(x)
+        answer.append(-1 if not tmp else min(tmp))
     return answer
-
-# arr= [0,1,2,3,4] queries=[[0,3],[1,2],[1,4]]
-# arr의 0번째와 3번째 바꾸고, arr의 1번째와 2번째 바꾸고, arr의 1번째와 4번째 바꾸기
+# arr= [0,1,2,4,3] queries= [[0,4,2],[0,3,2],[0,2,2]] result =[3,4,-1]
+# queries = [s,e,k] , 각 query마다 순서대로 s ≤ i ≤ e인 모든 i에 대해 k보다 크면서 가장 작은 arr[i]

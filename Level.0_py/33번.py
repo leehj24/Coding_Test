@@ -1,14 +1,6 @@
-def solution(l, r):
+def solution(start, end):
     answer = []
-    for num in range(l, r + 1):
-        isAdd = True
-        for s in str(num):
-            if s not in ["0", "5"]:
-                isAdd = False
-                break
-        if isAdd:
-            answer.append(num)
-    if len(answer) == 0:
-        answer.append(-1)
+    for i in range(start,end+1):
+        answer.append(i)
     return answer
-#l=5 r= 100 answer = [5,50,55] l과 r사이에 있는 숫자중에 5와 0만 있는 수 만 출력
+#start = 3 ,end= 10 ,answer = [3,4,5,6,7,8,9,10]
