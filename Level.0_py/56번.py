@@ -26,3 +26,9 @@ def solution(n, slicer, num_list):
         answer = [num_list[i] for i in range(a, b + 1, c)]
     
     return answer
+
+#n = 1 : num_list의 0번 인덱스부터 b번 인덱스까지
+#n = 2 : num_list의 a번 인덱스부터 마지막 인덱스까지
+#n = 3 : num_list의 a번 인덱스부터 b번 인덱스까지
+#n = 4 : num_list의 a번 인덱스부터 b번 인덱스까지 c 간격으로
+#올바르게 슬라이싱한 리스트를 return함
