@@ -1,5 +1,4 @@
 def solution(myString):
-    answer = []
     tmp = myString.split('x')
     return [len(i) for i in tmp]
 
