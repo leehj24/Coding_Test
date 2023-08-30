@@ -5,3 +5,5 @@ def solution(board, k):
             if i + j <= k:
                 total_sum += board[i][j]
     return total_sum
+
+#이차원 배열 대각선 순회하기

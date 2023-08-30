@@ -5,3 +5,5 @@ def solution(arr):
             if arr[i][j]!=arr[j][i]:
                 answer = 0
     return answer
+
+#특별한 이차원배열2
