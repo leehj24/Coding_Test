@@ -1,4 +1,4 @@
-from intertools import combinations as c
+# from intertools import combinations as c
 
 def solution(number):
     num = c(number,3)
@@ -15,8 +15,7 @@ def solution(number):
                     answer += 1
     return answer
 
-
-
 #  3명의 정수 번호를 더했을 때 0이 될 수 있는 방법의 수를 반환하세요.
 # number               result
 # [-2, 3, 0, 2, -5,7]     3
+
