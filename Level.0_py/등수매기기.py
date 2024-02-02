@@ -8,6 +8,10 @@ def solution(score):
         result.append(aver_Sort.index(i)+1)
     return  result
 
+def solution(score):
+    a = sorted([sum(i) for i in score], reverse = True)
+    return [a.index(sum(i))+1 for i in score]
+
 #    score                          result
 # [[80, 70], [90, 50],           [1, 2, 4, 3]
 # [40, 70], [50, 80]]            
