@@ -15,7 +15,6 @@ def solution(n):
 def solution(n):
     return len([i  for i in range(1,n+1,2) if n % i is 0])
 
-print(coke(15))
 #연속된 자연수들로 n을 표현하는 방법의 수
 #n  answer
 #15 4
