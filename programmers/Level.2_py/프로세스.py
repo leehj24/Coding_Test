@@ -53,10 +53,7 @@ def solution(p, l):
                 l = len(p)-1
             else:
                 l -= 1
-    return ans
-
-print(coke([2,1,3,2],2))
-            
+    return ans      
             
 # priorities	        location	return
 # [2, 1, 3, 2]	        2	           1
