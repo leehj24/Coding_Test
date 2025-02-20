@@ -1,3 +1,23 @@
+def solution(str1, str2):  
+    str1=str1.lower() 
+    str2=str2.lower() 
+    s1 = [str1[i:i+2] for i in range(len(str1)-1) if str1[i:i+2].isalpha()] 
+    s2 = [str2[i:i+2] for i in range(len(str2)-1) if str2[i:i+2].isalpha()] 
+    gyo = set(s1) & set(s2)
+    hap = set(s1) | set(s2)
+    
+    gyo_sum = sum([min(s1.count(gg), s2.count(gg)) for gg in gyo])
+    hap_sum = sum([max(s1.count(hh), s2.count(hh)) for hh in hap])
+    
+    if len(hap) == 0 :
+        return 65536
+    else:
+        return int((gyo_sum/hap_sum) *65536)
+
+
+
+##
+
 import re
 
 def solution(str1, str2):

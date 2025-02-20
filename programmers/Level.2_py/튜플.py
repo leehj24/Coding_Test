@@ -9,7 +9,7 @@ def check(s):
             if int(j) not in answer:
                 answer.append(int(j))
     return answer
-
+##
 import re
  
 def solution(s):
@@ -24,6 +24,23 @@ def solution(s):
     return answer
 
 print(check("{{2},{2,1},{2,1,3},{2,1,3,4}}"))
+
+##
+def solution(s):
+    answer = []
+    test = []
+    a = s[2:-2]
+    k=a.replace(",{", ",")
+    b = k.split("},")
+    for i in b:
+        q=list(map(int,i.split(',')))
+        test.append(q)
+    List = sorted(test,key=len)
+    for i in List:
+        for j in i:
+            if j not in answer:
+                answer.append(j)
+    return answer
 
 
 # 예를 들어 튜플이 (2, 1, 3, 4)인 경우 이는
