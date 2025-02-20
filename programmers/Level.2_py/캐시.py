@@ -17,6 +17,7 @@ def check(cacheSize, cities):
             time += 5
     return time
 
+##
 
 def solution(cacheSize, cities):
     import collections
