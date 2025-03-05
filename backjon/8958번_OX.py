@@ -1,4 +1,4 @@
-um =int(input())
+num =int(input())
 array = []
 for _ in range(num):
     value =input()
