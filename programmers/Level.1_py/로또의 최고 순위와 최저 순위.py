@@ -32,6 +32,7 @@ def solution(lottos, win_nums):
     return rank[cnt_0 + ans],rank[ans]
 
 print(coke([31,3,4,5,7,0],[31, 10, 45, 1, 6, 19]))
+
 #새로산 lottos배열에서 모르는 수는 0이며 발표난 로또win_nums 이라 하였을때 0의 수에 따라 최고순위와 최저순위를 return
 # 1등-6개일치, 2등-5개일치, 3등-4개일치, 4등-3개일치, 5등-2개일치, 6등 낙첨
 #lottos	                win_nums	                result
