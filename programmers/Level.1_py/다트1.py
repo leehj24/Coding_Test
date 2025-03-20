@@ -17,6 +17,8 @@ def coke(dart):
 
     return sum(scores)
 
+ # 다른풀이
+
 def coke(dart):
     num = []  #정제되지 않은 점수 값을 임시로 저장
     score = []  #3번의 시도에 대해 보너스와 옵션이 계산되고나면 시도마다 score 값 저장

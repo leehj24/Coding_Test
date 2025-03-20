@@ -19,6 +19,7 @@ def solution(msg):
         # 만약 [현재글자+다음글자]가 사전에 있다면 w의 값은 변하지 않고 c의 값만 1씩 증가한다. 
     return answer
 
+## 다른 사람 풀이
 def solution(msg):
     a = []
     msg += '_'
